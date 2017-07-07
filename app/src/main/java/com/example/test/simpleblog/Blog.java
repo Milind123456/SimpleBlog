@@ -6,16 +6,18 @@ package com.example.test.simpleblog;
 
 public class Blog {
 
-    private String title,description,image;
+    private String title, description, image;
+    private String username;
 
-    public Blog(){
+    public Blog() {
 
     }
 
-    public Blog(String title,String description,String image){
+    public Blog(String title, String description, String image, String username) {
         this.title = title;
         this.description = description;
         this.image = image;
+        this.username = username;
     }
 
     public String getTitle() {
@@ -40,5 +42,13 @@ public class Blog {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
